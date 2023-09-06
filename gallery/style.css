@@ -1,0 +1,174 @@
+html{
+	margin:0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+#logo{
+    width: 60px;
+}
+
+#header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gallery_block{
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 1%;
+}
+
+.gallery_block img {
+    width: 300px;
+    height: auto;
+}
+
+.nav_link {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight:400;
+    font-size: 30px;
+    border-radius: 20px;
+    color: #401acae7;
+}
+
+footer{
+    bottom:0px;
+    width:100%;
+    position:fixed;
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav_link:hover {color: #ac83ec;}
+
+@media (max-width: 700px) {
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    #logo{
+        width: 40px;
+    }
+
+    .nav_link {
+        font-size: 20px;
+    }
+
+    .gallery_block img {
+        width: 200px;
+        height: auto;
+    }
+
+    #header{
+        height: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    
+    #logo{
+        width: 20px;
+    }
+
+    .nav_link {
+        font-size: 15px;
+    }
+
+    .gallery_block img {
+        width: 100px;
+        height: auto;
+    }
+
+    #header{
+        height: 50px;
+    }
+}
